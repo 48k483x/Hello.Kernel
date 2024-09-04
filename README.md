@@ -16,7 +16,7 @@ A simple operating system project showcasing basic OS development concepts.
 └── README.md
 ```
 ### Building the kernel
-We will now create object files from <code>kernel.asm</code> and <code>kernel.c</code> and then link it using our linker script.
+We will now create object files from <code>mutliboot.S</code> and <code>kernel.c</code> and then link it using our linker script.
 
 <pre>
 nasm -f elf32 multiboot.S -o kasm.o
