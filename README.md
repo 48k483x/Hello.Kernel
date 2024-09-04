@@ -15,7 +15,7 @@ A simple operating system project showcasing basic OS development concepts.
 │   └── link.ld         # Linker script
 └── README.md
 ```
-#Building the kernel
+### Building the kernel
 We will now create object files from <code>kernel.asm</code> and <code>kernel.c</code> and then link it using our linker script.
 
 <pre>
