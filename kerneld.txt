@@ -59,3 +59,30 @@ unsigned int k_printf(char *message, unsigned int line)
 	}
 	return (1);
 }
+Section .text
+	;; Multiboot
+	align 4
+	dd 0x1BADB002  ; magic number
+	dd 0x00 ; flags
+	dd - (0x1BADB002 + 0x00); checksum m+f+c == 0
+
+global _start
+extern k_main
+
+_start:
+	cli
+	call k_main
+	hlt
+/*
+ * link.ld
+ */
+
+OUTPUT_FORMAT(elf32-i386)
+ENTRY(_start)
+SECTIONS
+{
+	. = 0x100000;
+	.text : {*(.text)}
+	.data : {*(.data)}
+	.bss : {*(.bss)}
+}
