@@ -1,6 +1,6 @@
 
 ```javascript
-const Hello world kernel = {
+const "Hello world kernel" = {
  "type": "Simple kernel (asm, C)",
  "files": {
    "kernel.c": "Kernel code",
