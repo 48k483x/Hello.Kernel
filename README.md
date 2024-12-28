@@ -1,7 +1,7 @@
 
 ```javascript
-const "Hello world kernel" = {
- "type": "Simple kernel (asm, C)",
+const kernel = {
+ "type": "Hello world kernel (asm, C)",
  "files": {
    "kernel.c": "Kernel code",
    "multiboot.S": "Bootloader", 
