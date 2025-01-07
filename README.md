@@ -6,9 +6,9 @@ const kernel = {
      "kernel.c": "Kernel code",
      "multiboot.S": "Bootloader", 
      "link.ld": "Linker script"
- },
- "build": [
-   "nasm -f elf32 multiboot.S -o kasm.o",
+   },
+   "build": [
+     "nasm -f elf32 multiboot.S -o kasm.o",
    "gcc -m32 -c kernel.c -o kc.o", 
    "ld -m elf_i386 -T link.ld -o kernel kasm.o kc.o"
  ],
