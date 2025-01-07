@@ -2,7 +2,7 @@
 ```javascript
 const kernel = {
   "type": "Hello world kernel (asm, C)",
- "files": {
+   "files": {
    "kernel.c": "Kernel code",
    "multiboot.S": "Bootloader", 
    "link.ld": "Linker script"
