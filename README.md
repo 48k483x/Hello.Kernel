@@ -3,9 +3,9 @@
 const kernel = {
   "type": "Hello world kernel (asm, C)",
    "files": {
-   "kernel.c": "Kernel code",
-   "multiboot.S": "Bootloader", 
-   "link.ld": "Linker script"
+     "kernel.c": "Kernel code",
+     "multiboot.S": "Bootloader", 
+     "link.ld": "Linker script"
  },
  "build": [
    "nasm -f elf32 multiboot.S -o kasm.o",
