@@ -11,6 +11,6 @@ const kernel = {
      "nasm -f elf32 multiboot.S -o kasm.o",
      "gcc -m32 -c kernel.c -o kc.o", 
      "ld -m elf_i386 -T link.ld -o kernel kasm.o kc.o"
- ],
- "run": "qemu-system-i386 -kernel kernel"
+   ],
+   "run": "qemu-system-i386 -kernel kernel"
 }
